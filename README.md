@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# iogamessite.io
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to io games site, its a website with most io games in one place.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow the instructions below to set up and run the game on your local machine.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Make sure you have the following installed:
 
-- Configure the top-level `parserOptions` property like this:
+- [Node.js](https://nodejs.org/) (version 19 or higher recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Installation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://[github.com/NAMERIO/iogamessaite
+   cd iogamessaite
+   ```
+2. Install the required dependencies:
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Running the Game
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Start the development server with the following command:
+   ```bash
+   npm run dev
+   ```
+
+After the server starts, open your browser and navigate to:
+   ```bash
+   http://localhost:5173/
+   ```
+
+## Features
+  - Place to request a game to be added
+  
+## Contributing
+  - Contributions are welcome! Feel free to open issues or submit pull requests.
+
+## License
+  - This project is licensed under the MIT License.
