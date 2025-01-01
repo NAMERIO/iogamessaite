@@ -29,7 +29,7 @@ const Filters: React.FC<FiltersProps> = ({
       />
       <select value={sortOption} onChange={(e) => onSortChange(e.target.value)}>
         <option value="alphabetical">Alphabetical</option>
-        <option value="date">Release Date</option>
+        <option value="date">New</option>
       </select>
     </div>
   );

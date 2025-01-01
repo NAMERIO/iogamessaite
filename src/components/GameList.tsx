@@ -17,7 +17,7 @@ const genresWithIcons = [
 const GameList: React.FC = () => {
   const [selectedGenre, setSelectedGenre] = useState<string>("");
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const [sortOption, setSortOption] = useState<string>("alphabetical");
+  const [sortOption, setSortOption] = useState<string>("date");
 
   const filteredGames = games
     .filter((game) => (selectedGenre ? game.genre === selectedGenre : true))
