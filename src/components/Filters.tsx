@@ -11,11 +11,8 @@ interface FiltersProps {
 }
 
 const Filters: React.FC<FiltersProps> = ({
-  genres,
-  selectedGenre,
   searchQuery,
   sortOption,
-  onGenreChange,
   onSearchChange,
   onSortChange,
 }) => {
