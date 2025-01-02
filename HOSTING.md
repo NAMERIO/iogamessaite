@@ -171,3 +171,8 @@ Restart Nginx (if necessary): Restart Nginx if there are configuration or server
 ```
 sudo systemctl restart nginx
 ```
+
+## Credits
+
+This guide was inspired by [leia-uwu's survev HOSTING.md](https://github.com/leia-uwu/survev/blob/master/HOSTING.md).
+
