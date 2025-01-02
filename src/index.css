@@ -6,23 +6,27 @@ body {
   padding: 0;
 }
 
-.game-list-container {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .genre-sidebar {
   width: 250px;
   background-color: #1c1c1c;
   padding: 20px;
   border-radius: 8px;
-  margin-right: 20px;
   height: auto; 
   overflow-y: visible; 
   align-self: flex-start;
+  position: fixed;
+  top: 30px; 
+  left: 70px;
+  z-index: 1000;
 }
 
+.game-list-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 400px;
+  padding-right: 300px;
+}
 
 .genre-sidebar h3 {
   color: white;
@@ -115,7 +119,7 @@ button:hover {
 
 .filters {
   position: relative;
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   margin: 20px auto;
   background-color: #1c1c1c;
   padding: 10px;
