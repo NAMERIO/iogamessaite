@@ -16,7 +16,7 @@ body {
   align-self: flex-start;
   position: fixed;
   top: 30px; 
-  left: 70px;
+  left: 40px;
   z-index: 1000;
 }
 
@@ -24,8 +24,8 @@ body {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 400px;
-  padding-right: 200px;
+  padding-left: 350px;
+  padding-right: 280px;
 }
 
 .genre-sidebar h3 {
