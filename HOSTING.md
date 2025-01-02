@@ -101,7 +101,7 @@ pnpm install
        listen 80;
        server_name your_domain_name www.your_domain_name;
 
-       root /path/to/your/project/dist; // It should be "root /var/www/html;"
+       root /var/www/html;
        index index.html;
 
        location / {
