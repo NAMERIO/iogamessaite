@@ -6,6 +6,7 @@ import Filters from "./Filters";
 const genresWithIcons = [
   { name: "Action", icon: "/assets/icons/geners/action.png" },
   { name: "Adventure", icon: "/assets/icons/geners/adventure.png" },
+  { name: "Race", icon: "/assets/icons/geners/race.png" },
   { name: "RPG", icon: "/assets/icons/geners/rpg.png" },
   { name: "Strategy", icon: "/assets/icons/geners/strategy.png" },
   { name: "Shooter", icon: "/assets/icons/geners/shooter.png" },
@@ -20,13 +21,20 @@ const GameList: React.FC = () => {
   const [sortOption, setSortOption] = useState<string>("date");
 
   const filteredGames = games
-    .filter((game) => (selectedGenre ? game.genre === selectedGenre : true))
+    .filter((game) =>
+      selectedGenre ? game.genre.includes(selectedGenre) : true
+    )
     .filter((game) =>
       searchQuery
         ? game.name.toLowerCase().includes(searchQuery.toLowerCase())
         : true
     )
     .sort((a, b) => {
+      // Ensure "hot" games are always at the top
+      if (b.hot && !a.hot) return 1;
+      if (a.hot && !b.hot) return -1;
+
+      // Apply additional sorting criteria
       if (sortOption === "alphabetical") {
         return a.name.localeCompare(b.name);
       } else if (sortOption === "date") {

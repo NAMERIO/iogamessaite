@@ -303,3 +303,10 @@ button:hover {
 .copy-button:hover {
   background-color: #3700b3;
 }
+
+.hot-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
