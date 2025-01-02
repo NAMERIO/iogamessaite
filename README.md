@@ -45,3 +45,6 @@ After the server starts, open your browser and navigate to:
 
 ## License
   - This project is licensed under the MIT License.
+
+## Production builds
+See [HOSTING.md](./HOSTING.md)
