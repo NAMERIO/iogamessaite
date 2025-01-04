@@ -34,5 +34,5 @@ Thumbs.db
 # Environment Variables
 .env
 
-# Ignore Firebase configuration file
+# Ignore Firebase configuration file.
 src/firebaseConfig.ts
