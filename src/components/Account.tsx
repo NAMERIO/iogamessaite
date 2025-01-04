@@ -145,14 +145,14 @@ const Account: React.FC = () => {
               />
               Google
             </button>
-            <button className="discord-login-btn">
-              <img
-                src="/assets/icons/ui/discord.png"
-                alt="Discord Icon"
-                className="icon"
-              />
-              Discord
-            </button>
+            {/* <button className="discord-login-btn">
+                <img
+                    src="/assets/icons/ui/discord.png"
+                    alt="Discord Icon"
+                    className="icon"
+                />
+                Discord
+                </button> */}
           </div>
         </div>
       ) : (
